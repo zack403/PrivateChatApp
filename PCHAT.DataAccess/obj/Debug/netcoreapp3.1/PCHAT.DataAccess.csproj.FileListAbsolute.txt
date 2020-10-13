@@ -1,0 +1,12 @@
+C:\Development\PCHAT\PCHAT.DataAccess\bin\Debug\netcoreapp3.1\PCHAT.DataAccess.deps.json
+C:\Development\PCHAT\PCHAT.DataAccess\bin\Debug\netcoreapp3.1\PCHAT.DataAccess.dll
+C:\Development\PCHAT\PCHAT.DataAccess\obj\Debug\netcoreapp3.1\PCHAT.DataAccess.AssemblyInfoInputs.cache
+C:\Development\PCHAT\PCHAT.DataAccess\obj\Debug\netcoreapp3.1\PCHAT.DataAccess.AssemblyInfo.cs
+C:\Development\PCHAT\PCHAT.DataAccess\obj\Debug\netcoreapp3.1\PCHAT.DataAccess.csprojAssemblyReference.cache
+C:\Development\PCHAT\PCHAT.DataAccess\bin\Debug\netcoreapp3.1\PCHAT.DataAccess.pdb
+C:\Development\PCHAT\PCHAT.DataAccess\bin\Debug\netcoreapp3.1\PCHAT.Domain.dll
+C:\Development\PCHAT\PCHAT.DataAccess\bin\Debug\netcoreapp3.1\PCHAT.Domain.pdb
+C:\Development\PCHAT\PCHAT.DataAccess\obj\Debug\netcoreapp3.1\PCHAT.DataAccess.csproj.CoreCompileInputs.cache
+C:\Development\PCHAT\PCHAT.DataAccess\obj\Debug\netcoreapp3.1\PCHAT.DataAccess.csproj.CopyComplete
+C:\Development\PCHAT\PCHAT.DataAccess\obj\Debug\netcoreapp3.1\PCHAT.DataAccess.dll
+C:\Development\PCHAT\PCHAT.DataAccess\obj\Debug\netcoreapp3.1\PCHAT.DataAccess.pdb
