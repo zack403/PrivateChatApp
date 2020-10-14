@@ -43,3 +43,7 @@ C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\PCHAT.DataAccess.pdb
 C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\PCHAT.Domain.pdb
 C:\Development\PCHAT\PCHAT.API\obj\Debug\netcoreapp3.1\PCHAT.API.csproj.CopyComplete
 C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
