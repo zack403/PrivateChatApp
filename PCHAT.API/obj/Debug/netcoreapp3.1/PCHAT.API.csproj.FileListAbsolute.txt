@@ -47,3 +47,8 @@ C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.J
 C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Development\PCHAT\PCHAT.API\obj\Debug\netcoreapp3.1\PCHAT.API.csproj.CoreCompileInputs.cache
+C:\Development\PCHAT\PCHAT.API\obj\Debug\netcoreapp3.1\PCHAT.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Development\PCHAT\PCHAT.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

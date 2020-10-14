@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using PCHAT.API.Hubs;
 using PCHAT.DataAccess;
 using PCHAT.DataAccess.Repositories;
 using PCHAT.Domain.Interfaces;
@@ -37,6 +38,8 @@ namespace PCHAT.API
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
             services.AddScoped<IPChatRepository, PChatRepository>();
+
+            services.AddSignalR();
 
             services.AddCors(options =>
             {
@@ -80,6 +83,7 @@ namespace PCHAT.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/chatsocket");
             });
         }
     }

@@ -18,7 +18,7 @@ namespace PCHAT.DataAccess
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             modelbuilder.Entity<User>().Property(x => x.UserName).IsRequired();
-            modelbuilder.Entity<User>().Property(x => x.Password).IsRequired();
+            modelbuilder.Entity<User>().Property(x => x.PasswordHash).IsRequired();
             modelbuilder.Entity<User>().Property(x => x.Gender).IsRequired();
 
             modelbuilder.Entity<User>().HasMany<Message>();
