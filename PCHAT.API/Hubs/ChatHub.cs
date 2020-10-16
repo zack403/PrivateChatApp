@@ -12,7 +12,7 @@ namespace PCHAT.API.Hubs
     {
         public async Task SendMessage(MessageCreationDto msg)
         {
-            await Clients.All.SendAsync("MessageReceived", msg);
+            await Clients.User(msg.RecipientId).SendAsync("MessageReceived", msg);
         }
     }
 }

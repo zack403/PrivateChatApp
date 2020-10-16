@@ -93,6 +93,8 @@
 
 
         await hubConnection.StartAsync();
+        Console.WriteLine("connected in details");
+
 
         var data = await sessionStorage.GetItemAsync<UserDto>("data");
         @if (data != null)

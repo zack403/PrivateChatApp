@@ -5,7 +5,7 @@
 
 @if (user != null)
 {
-    <h3>Chatting with user @user.UserName</h3>
+    <h3>Chatting with user @user.UserName.ToUpper()</h3>
 
 }
 
@@ -94,7 +94,19 @@
 
     protected override async Task OnInitializedAsync()
     {
-      
+        hubConnection = new HubConnectionBuilder()
+           .WithUrl("http://localhost:62744/chathub")
+           .Build();
+
+
+        hubConnection.On<MessageDto>("MessageReceived", (msg) =>
+        {
+            messages.Add(msg);
+            //StateHasChanged();
+        });
+
+        await hubConnection.StartAsync();
+        Console.WriteLine("connected in details");
         // If Id value is not supplied in the URL, use the value 1
         Id = Id ?? "1";
         user = await Http.GetFromJsonAsync<UserDto>($"http://localhost:62744/api/user/{Id}");
@@ -102,14 +114,15 @@
     }
 
 
-    public async Task Send()
+    async void Send()
     {
         var data = await sessionStorage.GetItemAsync<UserDto>("data");
         if (data != null)
         {
             var result = new { SenderId = data.Id, RecipientId = Id, Content = content };
             var postBody = new { SenderId = data.Id, RecipientId = Id, Content = content };
-            await Http.PostAsJsonAsync("http://localhost:62744/api/message", postBody);
+            await hubConnection.SendAsync("SendMessage", postBody);
+            //await Http.PostAsJsonAsync("http://localhost:62744/api/message", postBody);
         }
 
     }

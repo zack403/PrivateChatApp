@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "PCHAT.UI.dll": "sha256-Auo3k8d8pymgAzMXu1Yvj7ShGqCVzYpzGF9C9zPlipo=",
+      "PCHAT.UI.dll": "sha256-NsTvZghJaJnrZABJyFqWK3aaaWUlgSZwNk66OVmi5wo=",
       "Newtonsoft.Json.dll": "sha256-mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=",
       "netstandard.dll": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
       "System.Xml.Linq.dll": "sha256-IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=",
@@ -72,7 +72,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs="
     },
     "pdb": {
-      "PCHAT.UI.pdb": "sha256-ksf98uJOOsWMDxELqkUcKtf1KH8dNTKp7Wtfe3K2U0w="
+      "PCHAT.UI.pdb": "sha256-JEQeqOMWCMSz+5nTA4rpPtQ0sANXmGS8AM2R3fqAp20="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",

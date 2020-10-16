@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Auo3k8d8pymgAzMXu1Yvj7ShGqCVzYpzGF9C9zPlipo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\NsTvZghJaJnrZABJyFqWK3aaaWUlgSZwNk66OVmi5wo=.hash",
       "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\PCHAT.UI.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/PCHAT.UI.dll.gz"
     },
@@ -321,7 +321,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ksf98uJOOsWMDxELqkUcKtf1KH8dNTKp7Wtfe3K2U0w=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\JEQeqOMWCMSz_5nTA4rpPtQ0sANXmGS8AM2R3fqAp20=.hash",
       "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\PCHAT.UI.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/PCHAT.UI.pdb.gz"
     },
@@ -346,7 +346,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\9MPmYTW95AQjJGgv-Z5ss2yFlNrsRb5GCKJVP9Vq2A4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\YYrtuGDHx6qsehabCG4nRHkMoPew048u5JszJ4XINR8=.hash",
       "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }
