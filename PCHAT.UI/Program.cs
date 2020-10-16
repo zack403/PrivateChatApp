@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Blazored.SessionStorage;
 
 namespace PCHAT.UI
 {
@@ -18,6 +19,9 @@ namespace PCHAT.UI
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+            builder.Services.AddBlazoredSessionStorage(config =>
+        config.JsonSerializerOptions.WriteIndented = true);
 
             await builder.Build().RunAsync();
         }

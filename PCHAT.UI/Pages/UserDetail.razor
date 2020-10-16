@@ -1,0 +1,109 @@
+﻿@page "/UserDetail/{Id}"
+@inject HttpClient Http
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+@using Microsoft.AspNetCore.SignalR.Client
+
+
+<h3>UserDetail</h3>
+
+<div class="panel panel-primary">
+    <div class="panel-body">
+        @if (messages.Count == 0)
+        {
+            <div>
+                <p> No messages yet, say hi by using the message box below</p>
+            </div>
+        }
+
+
+        <ul class="chat">
+            <li>
+                @foreach (var message in messages)
+                {
+                    @if (message.SenderId == Id)
+                    {
+                        <div>
+                            <span class="chat-img pull-left">
+                                <img src="" class="img-circle" alt="">
+                            </span>
+                            <div class="chat-body">
+                                <div class="header">
+                                    <small class="text-muted pull-right">
+                                        <span class="fa fa-clock-o">@message.MessageSent</span>
+                                    </small>
+                                </div>
+                                <p>@message.Content</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div>
+                            <span class="chat-img pull-right">
+                                <img src="" class="img-circle" alt="">
+                            </span>
+                            <div class="chat-body">
+                                <div class="header">
+                                    <small class="text-muted pull-right">
+                                        <span class="fa fa-clock-o">@message.MessageSent</span>
+
+
+                                    </small>
+
+                                </div>
+                                <p>@message.Content</p>
+                            </div>
+                        </div>
+                    }
+
+                }
+
+
+
+            </li>
+        </ul>
+    </div>
+    <div class="panel-footer">
+        <form>
+            <div class="input-group">
+                <input type="text"
+                       name="sendmessage"
+                       class="form-control input-sm"
+                       @bind="content"
+                       required
+                       placeholder="send a private message">
+                <span class="input-group-btn"><button @onclick="Send" class="btn btn-primary btn-sm">Send</button></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public string Id { get; set; }
+    private UserDto user { get; set; }
+    private List<MessageDto> messages = new List<MessageDto>();
+    private string content { get; set; }
+    private HubConnection hubConnection;
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        // If Id value is not supplied in the URL, use the value 1
+        Id = Id ?? "1";
+        user = await Http.GetFromJsonAsync<UserDto>($"http://localhost:62744/api/user/{Id}");
+
+    }
+
+
+    public async Task Send()
+    {
+        var data = await sessionStorage.GetItemAsync<UserDto>("data");
+        var r = new { SenderId = data.Id, RecipientId = Id, Content = content };
+        await hubConnection.SendAsync("SendMessage", data);
+        return;
+    }
+
+}
