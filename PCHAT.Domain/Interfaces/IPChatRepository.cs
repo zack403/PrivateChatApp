@@ -13,9 +13,10 @@ namespace PCHAT.Domain.Interfaces
         void Delete<T>(T entity) where T : class;
         Task<bool> CompleteAsync();
         Task<IEnumerable<User>> GetUsers();
-        Task<User> GetUser(string id);
-        Task<Message> GetMessage(int id);
+        List<User> Get(string id);
+        Task<Message> GetMessage(string id);
         Task<IEnumerable<Message>> GetMessagesForUser(int userId);
         Task<IEnumerable<Message>> GetMessageThread(int userId, int recipientId);
+        User GetUser(string id);
     }
 }

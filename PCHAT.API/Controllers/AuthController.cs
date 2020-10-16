@@ -71,9 +71,18 @@ namespace PCHAT.API.Controllers
             //generate token
             var token = GenerateToken(userFromRepo);
 
-            var user = JObject.FromObject(userFromRepo, new JsonSerializer { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }).ToObject<UserDto>();
+            try
+            {
+                var user = JObject.FromObject(userFromRepo, new JsonSerializer { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }).ToObject<UserDto>();
+                return Ok(new { message = "Login was successful", UserName = user.UserName, Gender = user.Gender, Id = user.Id, token });
 
-            return Ok(new { message = "Login was successful", user, token });
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
         }
 
 

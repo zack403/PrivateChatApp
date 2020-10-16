@@ -21,6 +21,12 @@ namespace PCHAT.API.Controllers
             _hubContext = hubContext;
         }
 
+        [HttpGet]
+        public IActionResult Get ()
+        {
+            return Ok("gotten");
+        }
+
         [Route("send")]
         [HttpPost]
         public IActionResult SendRequest([FromBody] MessageCreationDto msg)

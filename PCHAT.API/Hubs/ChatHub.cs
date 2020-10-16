@@ -10,7 +10,7 @@ namespace PCHAT.API.Hubs
 {
     public class ChatHub : Hub
     {
-        public async Task NewMessage(MessageCreationDto msg)
+        public async Task SendMessage(MessageCreationDto msg)
         {
             await Clients.All.SendAsync("MessageReceived", msg);
         }

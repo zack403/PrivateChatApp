@@ -51,6 +51,7 @@ namespace PCHAT.DataAccess.Repositories
             CreatePasswordHash(password, out passwordHash, out passwordSalt);
             user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
+            user.Id = Guid.NewGuid().ToString();
             await _context.Users.AddAsync(user);
             await _unitofwork.CompleteAsync();
             return user;
@@ -68,10 +69,19 @@ namespace PCHAT.DataAccess.Repositories
 
         public async Task<bool> UserExists(string username)
         {
-            if (await _context.Users.AnyAsync(y => y.UserName == username))
-                return true;
+            try
+            {
+                if (await _context.Users.AnyAsync(y => y.UserName == username))
+                    return true;
 
-            return false;
+                return false;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            ;
         }
     }
 }

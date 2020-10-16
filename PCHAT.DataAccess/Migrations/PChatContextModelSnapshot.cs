@@ -21,10 +21,8 @@ namespace PCHAT.DataAccess.Migrations
 
             modelBuilder.Entity("PCHAT.Domain.Entities.Message", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("Content")
                         .HasColumnType("text");
@@ -41,10 +39,7 @@ namespace PCHAT.DataAccess.Migrations
                     b.Property<string>("RecipientId1")
                         .HasColumnType("text");
 
-                    b.Property<int>("SenderId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("SenderId1")
+                    b.Property<string>("SenderId")
                         .HasColumnType("text");
 
                     b.Property<string>("UserId")
@@ -57,13 +52,13 @@ namespace PCHAT.DataAccess.Migrations
 
                     b.HasIndex("RecipientId1");
 
-                    b.HasIndex("SenderId1");
+                    b.HasIndex("SenderId");
 
                     b.HasIndex("UserId");
 
                     b.HasIndex("UserId1");
 
-                    b.ToTable("Message");
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("PCHAT.Domain.Entities.User", b =>
@@ -91,7 +86,7 @@ namespace PCHAT.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("PCHAT.Domain.Entities.Message", b =>
@@ -103,7 +98,7 @@ namespace PCHAT.DataAccess.Migrations
 
                     b.HasOne("PCHAT.Domain.Entities.User", "Sender")
                         .WithMany("MessagesSent")
-                        .HasForeignKey("SenderId1")
+                        .HasForeignKey("SenderId")
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("PCHAT.Domain.Entities.User", null)

@@ -1,35 +1,34 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace PCHAT.DataAccess.Migrations
 {
-    public partial class initial : Migration
+    public partial class entitydatatypefix : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "User",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
                     UserName = table.Column<string>(nullable: false),
-                    Password = table.Column<string>(nullable: false),
-                    Gender = table.Column<string>(nullable: false)
+                    PasswordHash = table.Column<byte[]>(nullable: false),
+                    PasswordSalt = table.Column<byte[]>(nullable: true),
+                    Gender = table.Column<string>(nullable: false),
+                    Created = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_User", x => x.Id);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Message",
+                name: "Messages",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    SenderId = table.Column<int>(nullable: false),
-                    SenderId1 = table.Column<string>(nullable: true),
+                    Id = table.Column<string>(nullable: false),
+                    SenderId = table.Column<string>(nullable: true),
                     RecipientId = table.Column<int>(nullable: false),
                     RecipientId1 = table.Column<string>(nullable: true),
                     Content = table.Column<string>(nullable: true),
@@ -40,61 +39,61 @@ namespace PCHAT.DataAccess.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Message", x => x.Id);
+                    table.PrimaryKey("PK_Messages", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Message_User_RecipientId1",
+                        name: "FK_Messages_Users_RecipientId1",
                         column: x => x.RecipientId1,
-                        principalTable: "User",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Message_User_SenderId1",
-                        column: x => x.SenderId1,
-                        principalTable: "User",
+                        name: "FK_Messages_Users_SenderId",
+                        column: x => x.SenderId,
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Message_User_UserId",
+                        name: "FK_Messages_Users_UserId",
                         column: x => x.UserId,
-                        principalTable: "User",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Message_User_UserId1",
+                        name: "FK_Messages_Users_UserId1",
                         column: x => x.UserId1,
-                        principalTable: "User",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Message_RecipientId1",
-                table: "Message",
+                name: "IX_Messages_RecipientId1",
+                table: "Messages",
                 column: "RecipientId1");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Message_SenderId1",
-                table: "Message",
-                column: "SenderId1");
+                name: "IX_Messages_SenderId",
+                table: "Messages",
+                column: "SenderId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Message_UserId",
-                table: "Message",
+                name: "IX_Messages_UserId",
+                table: "Messages",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Message_UserId1",
-                table: "Message",
+                name: "IX_Messages_UserId1",
+                table: "Messages",
                 column: "UserId1");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Message");
+                name: "Messages");
 
             migrationBuilder.DropTable(
-                name: "User");
+                name: "Users");
         }
     }
 }

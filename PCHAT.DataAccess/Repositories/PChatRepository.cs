@@ -31,7 +31,7 @@ namespace PCHAT.DataAccess.Repositories
             _context.Remove(entity);
         }
 
-        public async Task<Message> GetMessage(int id)
+        public async Task<Message> GetMessage(string id)
         {
             return await _context.Messages.FirstOrDefaultAsync(m => m.Id == id);
         }
@@ -49,16 +49,25 @@ namespace PCHAT.DataAccess.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<User> GetUser(string userId)
+        public List<User> Get(string userId)
         {
-            var user =  _context.Users.Where(x => x.Id == userId).SingleOrDefaultAsync();
+            var user =  _context.Users.Where(x => x.Id != userId).ToList();
+           
             return user;
+            
         }
 
 
         public async Task<IEnumerable<User>> GetUsers()
         {
           return _context.Users.AsEnumerable(); 
+        }
+
+        public User GetUser(string id)
+        {
+            var user = _context.Users.Where(x => x.Id == id).SingleOrDefault();
+
+            return user;
         }
     }
 }

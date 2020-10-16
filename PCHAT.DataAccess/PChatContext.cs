@@ -12,8 +12,8 @@ namespace PCHAT.DataAccess
         {
         }
 
-        public DbSet<User> Users;
-        public DbSet<Message> Messages;
+        public DbSet<User> Users { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {

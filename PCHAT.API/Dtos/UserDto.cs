@@ -7,8 +7,8 @@ namespace PCHAT.API.Dtos
 {
     public class UserDto
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
+        public string Id { get; set; }
+        public string UserName { get; set; }
         public string Gender { get; set; }
         public DateTime Created { get; set; }
    
