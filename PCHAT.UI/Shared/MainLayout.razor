@@ -47,7 +47,7 @@
     async Task logout()
     {
         await sessionStorage.RemoveItemAsync("data");
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/login");
 
     }
 }

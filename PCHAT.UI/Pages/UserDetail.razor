@@ -3,8 +3,11 @@
 @inject Blazored.SessionStorage.ISessionStorageService sessionStorage
 @using Microsoft.AspNetCore.SignalR.Client
 
+@if (user != null)
+{
+    <h3>Chatting with user @user.UserName</h3>
 
-<h3>UserDetail</h3>
+}
 
 <div class="panel panel-primary">
     <div class="panel-body">
@@ -91,6 +94,7 @@
 
     protected override async Task OnInitializedAsync()
     {
+      
         // If Id value is not supplied in the URL, use the value 1
         Id = Id ?? "1";
         user = await Http.GetFromJsonAsync<UserDto>($"http://localhost:62744/api/user/{Id}");
@@ -101,9 +105,13 @@
     public async Task Send()
     {
         var data = await sessionStorage.GetItemAsync<UserDto>("data");
-        var r = new { SenderId = data.Id, RecipientId = Id, Content = content };
-        await hubConnection.SendAsync("SendMessage", data);
-        return;
+        if (data != null)
+        {
+            var result = new { SenderId = data.Id, RecipientId = Id, Content = content };
+            var postBody = new { SenderId = data.Id, RecipientId = Id, Content = content };
+            await Http.PostAsJsonAsync("http://localhost:62744/api/message", postBody);
+        }
+
     }
 
 }

@@ -435,6 +435,6 @@ C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\compressed\_framework\_bi
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\compressed\_framework\_bin\Newtonsoft.Json.dll.br
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\RazorDeclaration\Pages\UserDetail.razor.g.cs
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\Razor\Pages\UserDetail.razor.g.cs
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\qKbVq9bRjx5BHCYMghaBltqnRoMxraTwSlFsVHHpaTQ=.hash
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\uyDRcUqVVGv8AcTKHAc1BgtFqi0fmD1XbWN-6LuBpqQ=.hash
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\Eg5Gcs3RAazOFYZUl3hugHL50aGRSyOJxh-nwyNU4hE=.hash
+C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\Auo3k8d8pymgAzMXu1Yvj7ShGqCVzYpzGF9C9zPlipo=.hash
+C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\ksf98uJOOsWMDxELqkUcKtf1KH8dNTKp7Wtfe3K2U0w=.hash
+C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\9MPmYTW95AQjJGgv-Z5ss2yFlNrsRb5GCKJVP9Vq2A4=.hash
