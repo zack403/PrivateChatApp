@@ -7,6 +7,7 @@
 @inject Blazored.SessionStorage.ISessionStorageService sessionStorage
 @using PCHAT.UI.Shared
 @using Newtonsoft.Json;
+@*@inject IMessageService MessageService*@
 
 @if (!loggedIn)
 {
@@ -95,6 +96,13 @@
         await hubConnection.StartAsync();
         Console.WriteLine("connected in details");
 
+        //hubConnection.On<MessageDto>("MessageReceived", (msg) =>
+        //{
+
+        //    MessageService.SendMessage(msg);
+        //    StateHasChanged();
+        //});
+
 
         var data = await sessionStorage.GetItemAsync<UserDto>("data");
         @if (data != null)
@@ -114,14 +122,6 @@
         NavigationManager.NavigateTo($"/UserDetail/{id}");
     }
 
-    async Task Send()
-    {
-        var data = await sessionStorage.GetItemAsync<string>("data");
-        UserDto myCustomObject = JsonConvert.DeserializeObject<UserDto>(data);
-        //var r = new {SenderId = myCustomObject.id, RecipientId = myCustomObject., MessageSent = Content}
-        await hubConnection.SendAsync("SendMessage", data);
-        return;
-    }
 
     public bool IsConnected =>
     hubConnection.State == HubConnectionState.Connected;

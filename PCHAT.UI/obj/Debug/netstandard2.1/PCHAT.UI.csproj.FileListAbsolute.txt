@@ -412,8 +412,6 @@ C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\LqwA2Rpm96Ualk0
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\compressed\_framework\_bin\Blazored.SessionStorage.dll.gz
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\compressed\_framework\_bin\Blazored.SessionStorage.dll.br
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\PCHAT.UI.csproj.CoreCompileInputs.cache
-C:\Development\PCHAT\PCHAT.UI\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Newtonsoft.Json.dll
-C:\Development\PCHAT\PCHAT.UI\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Newtonsoft.Json.dll.gz
 C:\Development\PCHAT\PCHAT.UI\bin\Debug\netstandard2.1\Newtonsoft.Json.dll
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\RazorDeclaration\PCHAT.UI.dll
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\PCHAT.UI.TagHelpers.input.cache
@@ -430,11 +428,8 @@ C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\Razor\Shared\MainLayout.r
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=.hash
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\compressed\_framework\_bin\Newtonsoft.Json.dll.gz
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\compressed\_framework\_bin\Newtonsoft.Json.dll.br
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\RazorDeclaration\Pages\UserDetail.razor.g.cs
 C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\Razor\Pages\UserDetail.razor.g.cs
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\NsTvZghJaJnrZABJyFqWK3aaaWUlgSZwNk66OVmi5wo=.hash
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\JEQeqOMWCMSz_5nTA4rpPtQ0sANXmGS8AM2R3fqAp20=.hash
-C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\YYrtuGDHx6qsehabCG4nRHkMoPew048u5JszJ4XINR8=.hash
+C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\26Tjj1KxWZR7t1FM6T3SfjzflAwrrkCXwhUoO87pHHg=.hash
+C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\iUC_NoSnbCUTf-WGdh8-iRysRshl1op_9ztTPwov-50=.hash
+C:\Development\PCHAT\PCHAT.UI\obj\Debug\netstandard2.1\integrity\MYgL6O1FDBC3lpiujiwiDfzfNNqlxNQuGxDkpAyBoAs=.hash

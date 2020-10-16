@@ -1,5 +1,6 @@
 obj\Debug\netstandard2.1\blazor\unlinked\PCHAT.UI.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Newtonsoft.Json.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.SignalR.Client.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 obj\Debug\netstandard2.1\blazor\unlinked\netstandard.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Xml.Linq.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Core.dll
@@ -22,8 +23,6 @@ obj\Debug\netstandard2.1\blazor\unlinked\System.IO.Compression.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Drawing.Common.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Data.DataSetExtensions.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Data.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.SignalR.Client.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.SignalR.Common.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Text.Encodings.Web.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Buffers.dll

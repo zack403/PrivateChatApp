@@ -1,14 +1,19 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\NsTvZghJaJnrZABJyFqWK3aaaWUlgSZwNk66OVmi5wo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\26Tjj1KxWZR7t1FM6T3SfjzflAwrrkCXwhUoO87pHHg=.hash",
       "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\PCHAT.UI.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/PCHAT.UI.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=.hash",
-      "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Newtonsoft.Json.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Newtonsoft.Json.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\iQNQZbJVoDKKa1-YOlNdboD0FUiTFnpz5z3pcUQ5w7c=.hash",
+      "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.SignalR.Client.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.SignalR.Client.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\qHdxgeB0nKE8odGQX_eGQwM_lg3dEkT2XpjVyoAB9bE=.hash",
+      "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash",
@@ -119,16 +124,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\dxfTuT6ffPMmvuUUTfv7_bpLtOZZZHQdz77hjhy9qHw=.hash",
       "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Data.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Data.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\iQNQZbJVoDKKa1-YOlNdboD0FUiTFnpz5z3pcUQ5w7c=.hash",
-      "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.SignalR.Client.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.SignalR.Client.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\qHdxgeB0nKE8odGQX_eGQwM_lg3dEkT2XpjVyoAB9bE=.hash",
-      "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\HtmjAHcpzcFiqECW5xPcUWBjtxeUg0W6xNsdC7HZxZY=.hash",
@@ -321,7 +316,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\JEQeqOMWCMSz_5nTA4rpPtQ0sANXmGS8AM2R3fqAp20=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\iUC_NoSnbCUTf-WGdh8-iRysRshl1op_9ztTPwov-50=.hash",
       "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\PCHAT.UI.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/PCHAT.UI.pdb.gz"
     },
@@ -346,7 +341,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\YYrtuGDHx6qsehabCG4nRHkMoPew048u5JszJ4XINR8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\MYgL6O1FDBC3lpiujiwiDfzfNNqlxNQuGxDkpAyBoAs=.hash",
       "Source": "C:\\Development\\PCHAT\\PCHAT.UI\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }

@@ -36,7 +36,7 @@ namespace PCHAT.DataAccess.Repositories
             return await _context.Messages.FirstOrDefaultAsync(m => m.Id == id);
         }
 
-        public async Task<IEnumerable<Message>> GetMessagesForUser(int userId)
+        public async Task<IEnumerable<Message>> GetMessagesForUser(string userId)
         {
             var messages = _context.Messages
             .Include(s => s.Sender).Include(s => s.Recipient).Where(x => x.RecipientId == userId).AsQueryable();

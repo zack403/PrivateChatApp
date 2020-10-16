@@ -70,7 +70,6 @@
         <form>
             <div class="input-group">
                 <input type="text"
-                       name="sendmessage"
                        class="form-control input-sm"
                        @bind="content"
                        required
@@ -101,8 +100,9 @@
 
         hubConnection.On<MessageDto>("MessageReceived", (msg) =>
         {
+
             messages.Add(msg);
-            //StateHasChanged();
+            StateHasChanged();
         });
 
         await hubConnection.StartAsync();
@@ -119,12 +119,20 @@
         var data = await sessionStorage.GetItemAsync<UserDto>("data");
         if (data != null)
         {
-            var result = new { SenderId = data.Id, RecipientId = Id, Content = content };
             var postBody = new { SenderId = data.Id, RecipientId = Id, Content = content };
-            await hubConnection.SendAsync("SendMessage", postBody);
-            //await Http.PostAsJsonAsync("http://localhost:62744/api/message", postBody);
+            await Http.PostAsJsonAsync("http://localhost:62744/api/message", postBody);
         }
 
+    }
+
+    private void MessageHandler(MessageDto message)
+    {
+        if (message != null)
+            messages.Add(message);
+        else
+            messages.Clear();
+
+        StateHasChanged();
     }
 
 }

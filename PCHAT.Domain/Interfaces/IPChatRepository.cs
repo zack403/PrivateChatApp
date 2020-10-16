@@ -15,7 +15,7 @@ namespace PCHAT.Domain.Interfaces
         Task<IEnumerable<User>> GetUsers();
         List<User> Get(string id);
         Task<Message> GetMessage(string id);
-        Task<IEnumerable<Message>> GetMessagesForUser(int userId);
+        Task<IEnumerable<Message>> GetMessagesForUser(string userId);
         Task<IEnumerable<Message>> GetMessageThread(int userId, int recipientId);
         User GetUser(string id);
     }
